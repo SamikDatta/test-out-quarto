@@ -3,10 +3,5 @@ project:
   output-dir: docs
   
 format:
-  html:
-    theme: cosmo
-    code-link: true
-  pdf:
-    documentclass: scrreprt
-    keep-tex: true
-    output-file: pdf-book
+  html: default
+  pdf: default
