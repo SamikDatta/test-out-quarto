@@ -19,10 +19,10 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          # To install LaTeX to build PDF book 
-          tinytex: true 
           
+      - name: Install LaTeX
+        run: sudo apt-get install -y texlive-full
+
       # add software dependencies here and any libraries
       
       # From https://github.com/r-lib/actions/tree/v2-branch/setup-r
